@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #333333;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller"  >
+   <center>
+      <Canvas fx:id="canvas" height="800.0" width="800.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></Canvas>
+   </center>
+   <top>
+      <ToolBar prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #20B2AA;"  BorderPane.alignment="CENTER">
+         <items>
+            <MenuButton fx:id="menuBttn" mnemonicParsing="false" style="-fx-background-color: #eeeeee;"  text="Menu">
+              <items>
+                  <MenuItem fx:id="saveItem" mnemonicParsing="false" onAction="#save" text="Save" />
+                <MenuItem fx:id="redoItem" mnemonicParsing="false" text="Redo" />
+                <MenuItem fx:id="undoItem" mnemonicParsing="false" text="Undo" />
+                  <MenuItem fx:id="exitItem" mnemonicParsing="false" onAction="#exit" text="Exit" />
+              </items>
+            </MenuButton>
+            <ColorPicker fx:id="colorPicker" style="-fx-background-color: #eeeeee;" />
+            <RadioButton fx:id="drawRadio" mnemonicParsing="false" text="Draw" />
+            <RadioButton fx:id="fillRadio" mnemonicParsing="false" text="Fill   " />
+            <RadioButton fx:id="eraseRadio" mnemonicParsing="false" text="Erase" />
+         </items>
+      </ToolBar>
+   </top>
+</BorderPane>

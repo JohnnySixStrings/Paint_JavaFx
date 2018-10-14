@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Canvas learning:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Canvas_learning_jar</output-path>
+    <root id="archive" name="Canvas learning.jar">
+      <element id="module-output" name="Canvas learning" />
+    </root>
+  </artifact>
+</component>
